@@ -1,0 +1,153 @@
+{
+  "profile": {
+    "name": "Sriram M",
+    "shortName": "Sriram",
+    "tagline": "I build AI systems that ship — not just notebooks that demo.",
+    "role": "AI/ML Engineer",
+    "specialization": "GenAI · RAG Systems · Agentic AI",
+    "location": "Coimbatore, India",
+    "yearsOfExperience": "6mo+",
+    "bio": "AI/ML Engineer specializing in Generative AI, LLM applications, and production-grade machine learning systems. I build RAG pipelines, multi-agent systems, fine-tuned LLMs, and computer vision models — then take them the rest of the way with FastAPI, Docker, and MLOps, instead of leaving them in a notebook.",
+    "avatarSvg": "",
+    "social": {
+      "github": "https://github.com/Sriramm",
+      "linkedin": "https://linkedin.com/in/sriramm04",
+      "instagram": "",
+      "email": "sriramcr46@gmail.com",
+      "phone": "+91-9345893491",
+      "website": "https://portfolio93my.netlify.app"
+    }
+  },
+  "skills": {
+    "categories": [
+      {
+        "name": "Programming",
+        "items": ["Python", "SQL"]
+      },
+      {
+        "name": "Machine Learning",
+        "items": ["Pandas", "NumPy", "Scikit-learn", "XGBoost", "Feature Engineering", "Model Evaluation", "Hyperparameter Optimization"]
+      },
+      {
+        "name": "Deep Learning",
+        "items": ["PyTorch", "TensorFlow", "Neural Networks", "Computer Vision", "NLP"]
+      },
+      {
+        "name": "Generative AI",
+        "items": ["LangChain", "LangGraph", "LlamaIndex", "RAG", "Prompt Engineering", "AI Agents", "Transformer Architecture", "Attention Mechanisms", "Function Calling", "Structured Outputs", "MCP (Model Context Protocol)"]
+      },
+      {
+        "name": "Databases",
+        "items": ["PostgreSQL (pgvector)", "Pinecone", "Qdrant", "FAISS"]
+      },
+      {
+        "name": "Backend",
+        "items": ["FastAPI", "SQLAlchemy", "Pydantic", "REST APIs", "JWT", "OAuth2"]
+      },
+      {
+        "name": "MLOps & Deployment",
+        "items": ["Docker", "Kubernetes", "AWS", "Git", "CI/CD", "MLflow", "Redis", "Model Monitoring"]
+      },
+      {
+        "name": "Evaluation & Testing",
+        "items": ["RAGAS", "DeepEval", "Promptfoo", "Pytest", "Unit & Integration Testing"]
+      }
+    ]
+  },
+  "experience": [
+    {
+      "company": "ROR Technologies",
+      "role": "AI/ML Engineer Intern",
+      "period": "Dec 2025 — Jun 2026",
+      "location": "On-Site",
+      "summary": "Built and shipped production ML/GenAI features across chatbots, forecasting, and MLOps pipelines.",
+      "highlights": [
+        "Built and deployed an NLP-based customer support chatbot using FastAPI and LangChain, reducing average query resolution time by ~40% across 500+ daily user interactions.",
+        "Developed a predictive analytics model for business forecasting using XGBoost, achieving AUC-ROC of 0.91 after iterative feature engineering on a 150K-row dataset.",
+        "Designed real-time ML inference REST API endpoints supporting concurrent requests with sub-200ms response latency using async FastAPI.",
+        "Automated a data preprocessing and model retraining pipeline using Celery and Redis, cutting pipeline turnaround time from 4 hours to 45 minutes.",
+        "Containerized AI applications with Docker and deployed to AWS EC2 across 3 internal business use cases.",
+        "Maintained CI/CD pipelines for ML model versioning and deployment using Git and MLflow."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "multi-agent-rag",
+      "title": "Enterprise Multi-Agent RAG Knowledge Assistant",
+      "subtitle": "Production-grade multi-agent RAG platform",
+      "description": "Autonomous query routing, hybrid retrieval, and memory built on LangGraph and LangChain. Hybrid search (HF embeddings + BM25 + cross-encoder reranking) with RRF fusion and HyDE improved retrieval precision by 31% while cutting hallucinations. Evaluated with RAGAS, deployed on FastAPI + Redis + Docker + AWS with streaming, human-in-the-loop approval, and real-time monitoring.",
+      "stack": ["LangGraph", "LangChain", "FAISS/Qdrant", "RAGAS", "FastAPI", "Redis", "Docker", "AWS"],
+      "role": "Solo builder",
+      "year": "2026",
+      "link": "",
+      "image": "",
+      "highlight": true
+    },
+    {
+      "id": "llm-fine-tuning",
+      "title": "Customer Support LLM Fine-Tuning",
+      "subtitle": "QLoRA fine-tune on 150K+ support conversations",
+      "description": "Fine-tuned Llama-3.1-8B using QLoRA on historical customer support conversations and product documentation, improving intent understanding and reducing incorrect responses by 32% over the base model. Built an automated preprocessing, evaluation, and deployment pipeline.",
+      "stack": ["Transformers", "PEFT", "QLoRA", "MLflow", "Docker", "FastAPI"],
+      "role": "Solo builder",
+      "year": "2026",
+      "link": "",
+      "image": "",
+      "highlight": false
+    },
+    {
+      "id": "gym-automation",
+      "title": "Gym Membership Retention Automation Platform",
+      "subtitle": "AI-powered retention platform on n8n",
+      "description": "AI-powered gym membership retention platform with a React frontend and n8n automation workflows managing memberships, attendance, renewals, and engagement. Automated renewal reminders, inactivity follow-ups, personalized WhatsApp/email campaigns, and lead qualification, plus a real-time retention dashboard.",
+      "stack": ["n8n", "Supabase", "React", "WhatsApp Cloud API"],
+      "role": "Solo builder",
+      "year": "2026",
+      "link": "",
+      "image": "",
+      "highlight": false
+    },
+    {
+      "id": "churn-prediction",
+      "title": "Customer Churn Prediction ML System",
+      "subtitle": "XGBoost churn pipeline with monitoring",
+      "description": "End-to-end ML pipeline to predict customer churn from structured business data, including preprocessing, feature engineering, and class-imbalance handling. Compared Logistic Regression, Random Forest, and XGBoost, deployed the best model through a monitored FastAPI service with Pytest coverage.",
+      "stack": ["XGBoost", "Scikit-learn", "Optuna", "FastAPI", "Pytest"],
+      "role": "Solo builder",
+      "year": "2025",
+      "link": "",
+      "image": "",
+      "highlight": false
+    },
+    {
+      "id": "ai-virtual-mouse",
+      "title": "AI Virtual Mouse Using Hand Gestures",
+      "subtitle": "Touch-free cursor control via computer vision",
+      "description": "Real-time AI-powered virtual mouse using OpenCV, MediaPipe, and PyAutoGUI for touch-free cursor control. Implemented gesture-based cursor movement, clicks, drag-and-drop, and scrolling with smooth, low-latency hand landmark tracking.",
+      "stack": ["OpenCV", "MediaPipe", "PyAutoGUI", "Python"],
+      "role": "Solo builder",
+      "year": "2025",
+      "link": "",
+      "image": "",
+      "highlight": false
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Computer Applications (MCA)",
+      "institution": "Kumaraguru College of Technology, Coimbatore",
+      "period": "2024 — 2026",
+      "detail": "GPA: 8.4 / 10",
+      "image": "/kct.jpg"
+    },
+    {
+      "degree": "Bachelor of Computer Applications (BCA)",
+      "institution": "PSG College of Arts and Science, Coimbatore",
+      "period": "2021 — 2024",
+      "detail": "GPA: 7.0 / 10",
+      "image": "/psg.jpg"
+    }
+  ],
+  "testimonials": []
+}
