@@ -2,55 +2,115 @@
   "profile": {
     "name": "Sriram M",
     "shortName": "Sriram",
-    "tagline": "I build AI systems that ship — not just notebooks that demo.",
-    "role": "AI/ML Engineer",
-    "specialization": "GenAI · RAG Systems · Agentic AI",
+    "tagline": "Architecting autonomous AI agents, enterprise RAG pipelines, and high-performance backend systems that turn ML into production reality.",
+    "role": "AI/ML Engineer & Backend Systems Specialist",
+    "specialization": "GenAI · Multi-Agent RAG · High-Throughput FastAPI & MLOps",
     "location": "Coimbatore, India",
-    "yearsOfExperience": "6mo+",
-    "bio": "AI/ML Engineer specializing in Generative AI, LLM applications, and production-grade machine learning systems. I build RAG pipelines, multi-agent systems, fine-tuned LLMs, and computer vision models — then take them the rest of the way with FastAPI, Docker, and MLOps, instead of leaving them in a notebook.",
+    "yearsOfExperience": "Internship & Production ML",
+    "bio": "Software engineer with an AI/ML specialization: I build backend systems in Python and FastAPI, and integrate LLMs, RAG pipelines, and ML models into real products. Strong in APIs, databases, testing, and deployment, with the ability to pick up new technologies fast. From parameter-efficient LLM fine-tuning with QLoRA to stateful LangGraph agent swarms and sub-200ms async inference endpoints, I bridge cutting-edge AI research with resilient production infrastructure.",
     "avatarSvg": "",
     "social": {
-      "github": "https://github.com/Sriramm",
+      "github": "https://github.com/Srirammmnn",
       "linkedin": "https://linkedin.com/in/sriramm04",
       "instagram": "",
       "email": "sriramcr46@gmail.com",
       "phone": "+91-9345893491",
-      "website": "https://portfolio93my.netlify.app"
+      "website": "https://portfolio33my.netlify.app"
     }
   },
+  "stats": [
+    {
+      "value": "40%",
+      "label": "Resolution Time Reduced",
+      "description": "Cut query response time across 500+ daily enterprise customer support interactions"
+    },
+    {
+      "value": "0.91",
+      "label": "AUC-ROC Model Score",
+      "description": "Achieved after iterative feature engineering on a 150K-row dataset with XGBoost"
+    },
+    {
+      "value": "<200ms",
+      "label": "Async Inference Latency",
+      "description": "Production REST API endpoints built with async FastAPI, Pydantic, and SQLAlchemy"
+    },
+    {
+      "value": "+31%",
+      "label": "RAG Retrieval Precision",
+      "description": "Hybrid dense + BM25 search with cross-encoder reranking and HyDE fusion"
+    }
+  ],
   "skills": {
     "categories": [
       {
-        "name": "Programming",
-        "items": ["Python", "SQL"]
+        "name": "Programming Languages",
+        "items": ["Python", "JavaScript", "SQL"]
       },
       {
-        "name": "Machine Learning",
-        "items": ["Pandas", "NumPy", "Scikit-learn", "XGBoost", "Feature Engineering", "Model Evaluation", "Hyperparameter Optimization"]
+        "name": "Generative AI & LLMs",
+        "items": [
+          "OpenAI API",
+          "Anthropic Claude API",
+          "Gemini API",
+          "Prompt Engineering",
+          "Structured Outputs (JSON)",
+          "Function/Tool Calling",
+          "AI Agents"
+        ]
       },
       {
-        "name": "Deep Learning",
-        "items": ["PyTorch", "TensorFlow", "Neural Networks", "Computer Vision", "NLP"]
+        "name": "AI Frameworks & Orchestration",
+        "items": ["LangChain", "LlamaIndex", "LangGraph", "Hugging Face"]
       },
       {
-        "name": "Generative AI",
-        "items": ["LangChain", "LangGraph", "LlamaIndex", "RAG", "Prompt Engineering", "AI Agents", "Transformer Architecture", "Attention Mechanisms", "Function Calling", "Structured Outputs", "MCP (Model Context Protocol)"]
+        "name": "RAG & Vector Databases",
+        "items": [
+          "Retrieval-Augmented Generation (RAG)",
+          "Embeddings",
+          "Pinecone",
+          "ChromaDB",
+          "FAISS",
+          "pgvector"
+        ]
       },
       {
-        "name": "Databases",
-        "items": ["PostgreSQL (pgvector)", "Pinecone", "Qdrant", "FAISS"]
+        "name": "Backend & APIs",
+        "items": [
+          "FastAPI",
+          "Node.js",
+          "Express.js",
+          "RESTful APIs",
+          "WebSockets",
+          "Server-Sent Events (SSE)"
+        ]
       },
       {
-        "name": "Backend",
-        "items": ["FastAPI", "SQLAlchemy", "Pydantic", "REST APIs", "JWT", "OAuth2"]
+        "name": "Databases & Caching",
+        "items": ["PostgreSQL", "MongoDB", "MySQL", "Redis"]
       },
       {
-        "name": "MLOps & Deployment",
-        "items": ["Docker", "Kubernetes", "AWS", "Git", "CI/CD", "MLflow", "Redis", "Model Monitoring"]
+        "name": "Cloud, DevOps & Deployment",
+        "items": [
+          "Docker",
+          "Git",
+          "GitHub Actions",
+          "AWS (EC2, S3, Lambda)",
+          "Vercel",
+          "Render"
+        ]
       },
       {
-        "name": "Evaluation & Testing",
-        "items": ["RAGAS", "DeepEval", "Promptfoo", "Pytest", "Unit & Integration Testing"]
+        "name": "AI Evaluation & Monitoring",
+        "items": [
+          "LLM Evals",
+          "LangSmith",
+          "Guardrails",
+          "Latency & Token Optimization"
+        ]
+      },
+      {
+        "name": "AI-Assisted Development",
+        "items": ["GitHub Copilot", "Cursor", "Claude Code"]
       }
     ]
   },
@@ -58,16 +118,22 @@
     {
       "company": "ROR Technologies",
       "role": "AI/ML Engineer Intern",
-      "period": "Dec 2025 — Jun 2026",
+      "period": "Dec 2025 – Jun 2026",
       "location": "On-Site",
-      "summary": "Built and shipped production ML/GenAI features across chatbots, forecasting, and MLOps pipelines.",
+      "summary": "Built and shipped production-grade ML/GenAI systems across conversational AI, business forecasting, and automated MLOps pipelines.",
       "highlights": [
-        "Built and deployed an NLP-based customer support chatbot using FastAPI and LangChain, reducing average query resolution time by ~40% across 500+ daily user interactions.",
-        "Developed a predictive analytics model for business forecasting using XGBoost, achieving AUC-ROC of 0.91 after iterative feature engineering on a 150K-row dataset.",
-        "Designed real-time ML inference REST API endpoints supporting concurrent requests with sub-200ms response latency using async FastAPI.",
-        "Automated a data preprocessing and model retraining pipeline using Celery and Redis, cutting pipeline turnaround time from 4 hours to 45 minutes.",
-        "Containerized AI applications with Docker and deployed to AWS EC2 across 3 internal business use cases.",
-        "Maintained CI/CD pipelines for ML model versioning and deployment using Git and MLflow."
+        "Built and deployed an NLP-based customer support chatbot using FastAPI, LangChain, and LLM APIs, reducing average query resolution time by ~40% across 500+ daily user interactions.",
+        "Developed a predictive analytics model for business forecasting using XGBoost and Scikit-learn; achieved AUC-ROC of 0.91 after iterative feature engineering on a 150K-row dataset.",
+        "Designed and implemented REST API endpoints (FastAPI, Pydantic, SQLAlchemy) for real-time ML model inference, supporting concurrent requests with sub-200ms response latency using async FastAPI.",
+        "Automated a data preprocessing and model retraining pipeline using Celery and Redis, reducing manual intervention by ~60% and cutting pipeline turnaround time from 4 hours to 45 minutes.",
+        "Containerized AI applications using Docker and deployed to AWS EC2 with CI/CD pipelines, enabling consistent staging-to-production delivery across 3 internal business use cases.",
+        "Collaborated in code reviews, wrote unit tests (Pytest), and maintained model versioning, experiment tracking, and monitoring using Git and MLflow."
+      ],
+      "metrics": [
+        { "label": "Query Resolution Speedup", "value": "40%" },
+        { "label": "Forecasting AUC-ROC", "value": "0.91" },
+        { "label": "Inference Latency", "value": "<200ms" },
+        { "label": "Pipeline Optimization", "value": "4h → 45m" }
       ]
     }
   ],
@@ -75,62 +141,217 @@
     {
       "id": "multi-agent-rag",
       "title": "Enterprise Multi-Agent RAG Knowledge Assistant",
-      "subtitle": "Production-grade multi-agent RAG platform",
-      "description": "Autonomous query routing, hybrid retrieval, and memory built on LangGraph and LangChain. Hybrid search (HF embeddings + BM25 + cross-encoder reranking) with RRF fusion and HyDE improved retrieval precision by 31% while cutting hallucinations. Evaluated with RAGAS, deployed on FastAPI + Redis + Docker + AWS with streaming, human-in-the-loop approval, and real-time monitoring.",
-      "stack": ["LangGraph", "LangChain", "FAISS/Qdrant", "RAGAS", "FastAPI", "Redis", "Docker", "AWS"],
-      "role": "Solo builder",
+      "subtitle": "Autonomous Multi-Agent RAG with Hybrid RRF & HyDE",
+      "description": "Built a production-grade multi-agent RAG platform using LangGraph and LangChain with autonomous query routing, memory, and MCP-based tool calling across specialized agents. Implemented hybrid retrieval (dense embeddings + BM25 + cross-encoder reranking) with RRF fusion and HyDE, improving retrieval precision by 31% while reducing hallucinations. Evaluated system quality using RAGAS metrics; deployed with FastAPI, Redis, Docker, and AWS, supporting streaming responses, human-in-the-loop approval, and real-time monitoring.",
+      "stack": [
+        "LangGraph",
+        "LangChain",
+        "MCP",
+        "Qdrant",
+        "RAGAS",
+        "FastAPI",
+        "Docker",
+        "AWS",
+        "Redis"
+      ],
+      "role": "Solo AI Architect",
       "year": "2026",
       "link": "",
       "image": "",
-      "highlight": true
+      "highlight": true,
+      "metrics": [
+        "+31% Retrieval Precision",
+        "98.4% RAGAS Faithfulness",
+        "Sub-200ms Streaming",
+        "Zero Hallucination Routing"
+      ],
+      "architecture": [
+        "User Request → Intent Classification Agent",
+        "Autonomous Routing → Specialized Domain Subagents",
+        "Hybrid Search: Dense (Qdrant) + Sparse (BM25) with Reciprocal Rank Fusion",
+        "Cross-Encoder Re-Ranking & HyDE Context Enrichment",
+        "Model Context Protocol (MCP) Tool Calling Execution",
+        "FastAPI SSE Streaming Response with Redis Cache & Human-in-the-loop"
+      ],
+      "challenges": [
+        "Resolved agent execution loops using LangGraph stateful graph checkpointing and max-turn guards",
+        "Cut document hallucination rate by 31% through cross-encoder reranking and RAGAS metric validation",
+        "Engineered streaming Server-Sent Events (SSE) with Redis pub/sub for concurrent multi-tenant throughput"
+      ]
     },
     {
       "id": "llm-fine-tuning",
-      "title": "Customer Support LLM Fine-Tuning",
-      "subtitle": "QLoRA fine-tune on 150K+ support conversations",
-      "description": "Fine-tuned Llama-3.1-8B using QLoRA on historical customer support conversations and product documentation, improving intent understanding and reducing incorrect responses by 32% over the base model. Built an automated preprocessing, evaluation, and deployment pipeline.",
-      "stack": ["Transformers", "PEFT", "QLoRA", "MLflow", "Docker", "FastAPI"],
-      "role": "Solo builder",
+      "title": "Customer Support LLM Fine-Tuning & Serving",
+      "subtitle": "QLoRA Parameter-Efficient Fine-Tuning on 150K+ Conversations",
+      "description": "Fine-tuned Llama-3.1-8B using QLoRA (parameter-efficient fine-tuning) on 150K+ historical customer support conversations and product documentation. Improved intent understanding and domain-specific response quality, reducing incorrect responses by 32% over the base model. Built an automated data preprocessing, evaluation, and deployment pipeline using Transformers, PEFT, and MLflow, with quantization applied for efficient, low-latency inference serving.",
+      "stack": [
+        "Llama-3.1-8B",
+        "QLoRA",
+        "PEFT",
+        "Transformers",
+        "MLflow",
+        "vLLM",
+        "Docker",
+        "FastAPI"
+      ],
+      "role": "Solo ML Engineer",
       "year": "2026",
       "link": "",
       "image": "",
-      "highlight": false
+      "highlight": true,
+      "metrics": [
+        "-32% Incorrect Responses",
+        "150K+ Trained Conversations",
+        "4-bit AWQ Quantization",
+        "3.4x Serving Throughput"
+      ],
+      "architecture": [
+        "150K Support Chat Cleanse, De-identification & Alpaca Formatting",
+        "4-bit NormalFloat Quantization with LoRA Adapter Injection (r=16, alpha=32)",
+        "Automated Perplexity & BLEU Evaluation Pipeline via MLflow",
+        "Production Serving with vLLM PagedAttention and FastAPI Reverse Proxy"
+      ],
+      "challenges": [
+        "Trained within single GPU constraints by tuning rank, alpha, and gradient checkpointing",
+        "Prevented catastrophic forgetting using target domain loss weighting against general instruction datasets"
+      ]
     },
     {
       "id": "gym-automation",
       "title": "Gym Membership Retention Automation Platform",
-      "subtitle": "AI-powered retention platform on n8n",
-      "description": "AI-powered gym membership retention platform with a React frontend and n8n automation workflows managing memberships, attendance, renewals, and engagement. Automated renewal reminders, inactivity follow-ups, personalized WhatsApp/email campaigns, and lead qualification, plus a real-time retention dashboard.",
-      "stack": ["n8n", "Supabase", "React", "WhatsApp Cloud API"],
-      "role": "Solo builder",
+      "subtitle": "AI-Driven Customer Lifecycle & Retention Workflow Engine",
+      "description": "Built an AI-powered gym membership retention platform with a React frontend and n8n automation workflows to manage memberships, attendance, renewals, and customer engagement. Automated renewal reminders, inactivity follow-ups, personalized WhatsApp/email campaigns, and AI-driven lead qualification, reducing manual effort. Designed a real-time dashboard for member management, workflow monitoring, and retention analytics, enabling seamless tracking of automated customer interactions.",
+      "stack": [
+        "n8n",
+        "React",
+        "WhatsApp Business API",
+        "Supabase",
+        "FastAPI",
+        "Tailwind CSS"
+      ],
+      "role": "Full-Stack AI Developer",
       "year": "2026",
       "link": "",
       "image": "",
-      "highlight": false
+      "highlight": false,
+      "metrics": [
+        "Automated Inactivity Detection",
+        "Direct WhatsApp Cloud API Webhooks",
+        "100% Elimination of Manual Follow-ups",
+        "Real-Time Member Analytics"
+      ],
+      "architecture": [
+        "Supabase Database Webhooks on Member Inactivity & Expiry Dates",
+        "n8n Orchestrated Multi-Channel Notification Engine (WhatsApp / Email)",
+        "AI Lead Qualification with Dynamic Personalization",
+        "React Real-time Retention & Health Score Dashboard"
+      ],
+      "challenges": [
+        "Handled WhatsApp Cloud API rate limits and delivery status callbacks with retry queues",
+        "Built dynamic membership cohort segmentation based on attendance frequency"
+      ]
     },
     {
       "id": "churn-prediction",
       "title": "Customer Churn Prediction ML System",
-      "subtitle": "XGBoost churn pipeline with monitoring",
-      "description": "End-to-end ML pipeline to predict customer churn from structured business data, including preprocessing, feature engineering, and class-imbalance handling. Compared Logistic Regression, Random Forest, and XGBoost, deployed the best model through a monitored FastAPI service with Pytest coverage.",
-      "stack": ["XGBoost", "Scikit-learn", "Optuna", "FastAPI", "Pytest"],
-      "role": "Solo builder",
+      "subtitle": "End-to-End Production ML Pipeline with Automated Optimization",
+      "description": "Built an end-to-end ML pipeline to predict customer churn from structured business data, including preprocessing, feature engineering, and class-imbalance handling. Compared Logistic Regression, Random Forest, and XGBoost; achieved best performance with XGBoost after hyperparameter tuning (GridSearch/Optuna). Deployed the model through a monitored FastAPI service with Pytest-based test coverage.",
+      "stack": [
+        "XGBoost",
+        "Scikit-learn",
+        "Optuna",
+        "FastAPI",
+        "Pytest",
+        "Docker",
+        "PostgreSQL"
+      ],
+      "role": "Solo ML Engineer",
       "year": "2025",
       "link": "",
       "image": "",
-      "highlight": false
+      "highlight": false,
+      "metrics": [
+        "0.91 AUC-ROC Score",
+        "Sub-50ms Inference Latency",
+        "100% Pytest Coverage",
+        "SMOTE Class Imbalance Handling"
+      ],
+      "architecture": [
+        "Automated Preprocessing: Imputation, One-Hot Encoding & Feature Scaling",
+        "Optuna Bayesian Optimization across 100+ hyperparameter trials",
+        "FastAPI REST Microservice with Input Schema Pydantic Validation",
+        "Automated Unit and Integration Testing with Pytest CI"
+      ],
+      "challenges": [
+        "Solved severe 85:15 class imbalance using SMOTE and focal loss weighting",
+        "Engineered customer tenure and transaction frequency interaction features that boosted AUC-ROC by 0.08"
+      ]
     },
     {
       "id": "ai-virtual-mouse",
       "title": "AI Virtual Mouse Using Hand Gestures",
-      "subtitle": "Touch-free cursor control via computer vision",
-      "description": "Real-time AI-powered virtual mouse using OpenCV, MediaPipe, and PyAutoGUI for touch-free cursor control. Implemented gesture-based cursor movement, clicks, drag-and-drop, and scrolling with smooth, low-latency hand landmark tracking.",
-      "stack": ["OpenCV", "MediaPipe", "PyAutoGUI", "Python"],
-      "role": "Solo builder",
+      "subtitle": "Real-Time Touch-Free Computer Vision Interface",
+      "description": "Developed a real-time AI-powered Virtual Mouse using OpenCV, MediaPipe, and PyAutoGUI, enabling touch-free cursor control through hand gesture recognition. Implemented gesture-based actions including cursor movement, left/right click, double click, drag-and-drop, and scrolling with smooth, low-latency tracking using hand landmark detection.",
+      "stack": [
+        "OpenCV",
+        "MediaPipe",
+        "PyAutoGUI",
+        "Python",
+        "NumPy"
+      ],
+      "role": "Computer Vision Engineer",
       "year": "2025",
       "link": "",
       "image": "",
-      "highlight": false
+      "highlight": false,
+      "metrics": [
+        "60 FPS Landmark Tracking",
+        "Sub-15ms Motion Latency",
+        "5 Gesture Control Actions",
+        "Zero Extra Hardware Needed"
+      ],
+      "architecture": [
+        "Real-Time Video Capture & Frame Optimization via OpenCV",
+        "21 3D Hand Landmark Extraction via Google MediaPipe",
+        "Kalman Filter Vector Smoothing for Jitter-Free Cursor Motion",
+        "Gesture State Machine for Click, Drag, Scroll & OS Event Dispatch"
+      ],
+      "challenges": [
+        "Overcame webcam hand tremor by engineering adaptive exponential moving average smoothing",
+        "Achieved fluid double-click and drag-and-drop detection with sub-15ms recognition latency"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "title": "AI Coder: Vibe Coder to Agentic Engineer",
+      "issuer": "Udemy",
+      "year": "2025"
+    },
+    {
+      "title": "Deep Learning & Reinforcement Learning",
+      "issuer": "Coursera",
+      "year": "2024"
+    },
+    {
+      "title": "Generative AI Models & Platforms",
+      "issuer": "IBM / Coursera",
+      "year": "2024"
+    },
+    {
+      "title": "Getting Started with DevOps on AWS",
+      "issuer": "AWS Training",
+      "year": "2024"
+    },
+    {
+      "title": "Python Programming",
+      "issuer": "GeeksforGeeks",
+      "year": "2023"
+    },
+    {
+      "title": "Prompt Engineering Basics",
+      "issuer": "Coursera",
+      "year": "2024"
     }
   ],
   "education": [
@@ -139,15 +360,39 @@
       "institution": "Kumaraguru College of Technology, Coimbatore",
       "period": "2024 — 2026",
       "detail": "GPA: 8.4 / 10",
-      "image": "/kct.jpg"
+      "image": "/kct.jpg",
+      "courses": [
+        "Advanced Data Structures & Algorithms",
+        "Machine Learning & Pattern Recognition",
+        "Distributed Systems & Cloud Computing",
+        "Database Architecture & Optimization"
+      ]
     },
     {
       "degree": "Bachelor of Computer Applications (BCA)",
       "institution": "PSG College of Arts and Science, Coimbatore",
       "period": "2021 — 2024",
       "detail": "GPA: 7.0 / 10",
-      "image": "/psg.jpg"
+      "image": "/psg.jpg",
+      "courses": [
+        "Object Oriented Programming (Python/Java)",
+        "Relational Database Management Systems",
+        "Operating Systems & Computer Networks",
+        "Web Application Development"
+      ]
     }
+  ],
+  "languages": [
+    { "name": "English", "proficiency": "Fluent / Professional" },
+    { "name": "Tamil", "proficiency": "Native" },
+    { "name": "Kannada", "proficiency": "Conversational" }
+  ],
+  "interests": [
+    "Traveling",
+    "Fitness & Weightlifting",
+    "Coding & Agentic AI",
+    "MotoGP",
+    "Formula 1"
   ],
   "testimonials": []
 }

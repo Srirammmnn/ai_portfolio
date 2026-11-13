@@ -1,21 +1,88 @@
-@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap");
 @import "tailwindcss";
 
 :root {
-  --bg: #0b0d10;
-  --surface: #14171c;
-  --surface-hi: #1b1f26;
-  --border: #262b33;
-  --text: #edeff2;
-  --text-muted: #8890a0;
-  --text-dim: #565d6b;
-  --signal: #6ee7b7;
-  --pulse: #7c86ff;
-  --chrome-top: #646973;
-  --chrome-bottom: #bbccd7;
-  --font-display: "Sora", "Inter", sans-serif;
+  /* Solar Orange Theme Matching Reference */
+  --bg: #111113;
+  --surface: #18181b;
+  --surface-hi: #222226;
+  --border: #2a2a30;
+  --text: #ffffff;
+  --text-muted: #a1a1aa;
+  --text-dim: #71717a;
+  --signal: #ff6a00;
+  --signal-glow: rgba(255, 106, 0, 0.4);
+  --pulse: #f97316;
+  --pulse-glow: rgba(249, 115, 22, 0.4);
+  --chrome-top: #ffffff;
+  --chrome-bottom: #f97316;
+  --font-display: "Plus Jakarta Sans", "Inter", sans-serif;
   --font-body: "Inter", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
+}
+
+[data-theme="solar"] {
+  --bg: #111113;
+  --surface: #18181b;
+  --surface-hi: #222226;
+  --border: #2a2a30;
+  --text: #ffffff;
+  --text-muted: #a1a1aa;
+  --text-dim: #71717a;
+  --signal: #ff6a00;
+  --signal-glow: rgba(255, 106, 0, 0.4);
+  --pulse: #f97316;
+  --pulse-glow: rgba(249, 115, 22, 0.4);
+  --chrome-top: #ffffff;
+  --chrome-bottom: #f97316;
+}
+
+[data-theme="quantum"] {
+  --bg: #08090d;
+  --surface: #0f131a;
+  --surface-hi: #161c26;
+  --border: #222936;
+  --text: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  --signal: #00f5d4;
+  --signal-glow: rgba(0, 245, 212, 0.4);
+  --pulse: #8b5cf6;
+  --pulse-glow: rgba(139, 92, 246, 0.4);
+  --chrome-top: #ffffff;
+  --chrome-bottom: #94a3b8;
+}
+
+[data-theme="emerald"] {
+  --bg: #060b08;
+  --surface: #0c1510;
+  --surface-hi: #122119;
+  --border: #1a3326;
+  --text: #f0fdf4;
+  --text-muted: #86efac;
+  --text-dim: #4ade80;
+  --signal: #10b981;
+  --signal-glow: rgba(16, 185, 129, 0.4);
+  --pulse: #84cc16;
+  --pulse-glow: rgba(132, 204, 22, 0.4);
+  --chrome-top: #ffffff;
+  --chrome-bottom: #86efac;
+}
+
+[data-theme="hyperviolet"] {
+  --bg: #0a0814;
+  --surface: #120e24;
+  --surface-hi: #1b1436;
+  --border: #2c2057;
+  --text: #faf5ff;
+  --text-muted: #d8b4fe;
+  --text-dim: #c084fc;
+  --signal: #a855f7;
+  --signal-glow: rgba(168, 85, 247, 0.4);
+  --pulse: #38bdf8;
+  --pulse-glow: rgba(56, 189, 248, 0.4);
+  --chrome-top: #ffffff;
+  --chrome-bottom: #c084fc;
 }
 
 * {
@@ -32,8 +99,7 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-body);
-  overflow-wrap: normal;
-  word-break: normal;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -49,61 +115,42 @@ section {
   font-family: var(--font-mono);
 }
 
-.chrome-text {
-  background: linear-gradient(180deg, var(--chrome-top) 0%, var(--chrome-bottom) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+.font-body {
+  font-family: var(--font-body);
 }
 
-.signal-text {
+.text-brand-orange {
   color: var(--signal);
 }
 
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+.bg-brand-orange {
+  background-color: var(--signal);
 }
 
-.marquee-track {
-  animation: marquee 32s linear infinite;
-}
-
-.marquee-track:hover {
-  animation-play-state: paused;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .marquee-track {
-    animation: none;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-  }
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
+.glass-panel {
+  background: rgba(24, 24, 27, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border);
 }
 
 ::selection {
   background: var(--signal);
-  color: #0b0d10;
+  color: #111113;
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 ::-webkit-scrollbar-track {
   background: var(--bg);
 }
 ::-webkit-scrollbar-thumb {
   background: var(--border);
-  border-radius: 8px;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--signal);
 }
 
 :focus-visible {

@@ -36,6 +36,7 @@ export interface Experience {
   location: string;
   summary: string;
   highlights: string[];
+  metrics?: { label: string; value: string }[];
 }
 
 export interface Project {
@@ -49,6 +50,9 @@ export interface Project {
   link: string;
   image: string;
   highlight: boolean;
+  metrics?: string[];
+  architecture?: string[];
+  challenges?: string[];
 }
 
 export interface Education {
@@ -57,6 +61,25 @@ export interface Education {
   period: string;
   detail: string;
   image?: string;
+  courses?: string[];
+}
+
+export interface Certification {
+  title: string;
+  issuer: string;
+  year: string;
+  url?: string;
+}
+
+export interface Language {
+  name: string;
+  proficiency: string;
+}
+
+export interface StatItem {
+  value: string;
+  label: string;
+  description: string;
 }
 
 export interface Testimonial {
@@ -69,9 +92,13 @@ export interface Testimonial {
 
 export interface PortfolioData {
   profile: Profile;
+  stats: StatItem[];
   skills: Skills;
   experience: Experience[];
   projects: Project[];
+  certifications: Certification[];
   education: Education[];
+  languages: Language[];
+  interests: string[];
   testimonials: Testimonial[];
 }

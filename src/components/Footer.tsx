@@ -1,71 +1,69 @@
-import { useState } from "react";
-import { Copy, Check, Phone } from "lucide-react";
+import { useState, useEffect } from "react";
 import type { Profile } from "../types/portfolio";
-import SocialLinks from "./SocialLinks";
-
-const NAV = [
-  { href: "#home", label: "Home" },
-  { href: "#about", label: "About" },
-  { href: "#skills", label: "Skills" },
-  { href: "#projects", label: "Projects" },
-];
+import { soundManager } from "../utils/audio";
+import { ArrowUp } from "lucide-react";
 
 export default function Footer({ profile }: { profile: Profile }) {
-  const [copied, setCopied] = useState(false);
+  const [localTime, setLocalTime] = useState("");
 
-  const copyEmail = async () => {
-    try {
-      await navigator.clipboard.writeText(profile.social.email);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 1800);
-    } catch {
-      // clipboard unavailable — no-op
-    }
+  useEffect(() => {
+    const updateTime = () => {
+      const now = new Date();
+      // Format time in Coimbatore (IST / Asia/Kolkata)
+      const istTime = new Intl.DateTimeFormat("en-US", {
+        timeZone: "Asia/Kolkata",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: true,
+      }).format(now);
+      setLocalTime(istTime);
+    };
+
+    updateTime();
+    const interval = setInterval(updateTime, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const scrollToTop = () => {
+    soundManager.playClick();
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
-    <footer id="contact" className="border-t border-[var(--border)] px-6 pt-20 pb-8">
-      <div className="mx-auto grid max-w-6xl gap-12 md:grid-cols-3">
-        <div>
-          <p className="font-display chrome-text text-2xl font-bold">{profile.name}</p>
-          <p className="mt-2 text-sm text-[var(--text-muted)]">{profile.specialization}</p>
-          <p className="mt-1 font-mono text-xs text-[var(--text-dim)]">{profile.location}</p>
+    <footer className="border-t border-[var(--border)] bg-slate-950/80 backdrop-blur-xl py-12 px-6">
+      <div className="mx-auto max-w-7xl flex flex-col md:flex-row items-center justify-between gap-6">
+        {/* Left: Branding & Status */}
+        <div className="flex flex-col items-center md:items-start text-center md:text-left">
+          <div className="flex items-center gap-2">
+            <span className="font-display font-extrabold text-white text-lg">
+              {profile.name}
+            </span>
+            <span className="rounded bg-[var(--signal)]/15 px-2 py-0.5 font-mono text-[10px] text-[var(--signal)]">
+              AI/ML Engineer
+            </span>
+          </div>
+          <p className="font-mono text-xs text-[var(--text-dim)] mt-1">
+            Coimbatore, India · Local Time:{" "}
+            <span className="text-[var(--signal)]">{localTime || "IST"}</span>
+          </p>
         </div>
 
-        <div>
-          <p className="font-mono text-xs uppercase tracking-widest text-[var(--text-dim)]">Navigate</p>
-          <ul className="mt-4 space-y-2.5">
-            {NAV.map((l) => (
-              <li key={l.href}>
-                <a href={l.href} className="text-sm text-[var(--text-muted)] hover:text-[var(--text)]">
-                  {l.label}
-                </a>
-              </li>
-            ))}
-          </ul>
+        {/* Center: Tech note */}
+        <div className="flex items-center gap-2 font-mono text-xs text-slate-500">
+          <span>Engineered with React 19, Three.js 3D & Tailwind</span>
         </div>
 
-        <div>
-          <p className="font-mono text-xs uppercase tracking-widest text-[var(--text-dim)]">Reach out</p>
+        {/* Right: Scroll to top */}
+        <div className="flex items-center gap-4">
           <button
-            onClick={copyEmail}
-            className="mt-4 flex items-center gap-2 text-sm text-[var(--text-muted)] hover:text-[var(--text)]"
+            onClick={scrollToTop}
+            className="flex items-center gap-1.5 rounded-full border border-[var(--border)] bg-slate-900/80 px-4 py-2 font-mono text-xs text-slate-300 hover:text-white hover:border-[var(--signal)] transition-all shadow-md active:scale-95"
           >
-            {profile.social.email}
-            {copied ? <Check size={14} className="signal-text" /> : <Copy size={14} />}
+            <span>Back to Top</span>
+            <ArrowUp size={13} className="text-[var(--signal)]" />
           </button>
-          {profile.social.phone && (
-            <p className="mt-2.5 flex items-center gap-2 text-sm text-[var(--text-muted)]">
-              <Phone size={14} /> {profile.social.phone}
-            </p>
-          )}
-          <SocialLinks social={profile.social} className="mt-5" />
         </div>
-      </div>
-
-      <div className="mx-auto mt-16 flex max-w-6xl flex-col items-center justify-between gap-3 border-t border-[var(--border)] pt-6 font-mono text-xs text-[var(--text-dim)] sm:flex-row">
-        <span>© {new Date().getFullYear()} {profile.name}. All rights reserved.</span>
-        <span>Built with React · Tailwind · Framer Motion</span>
       </div>
     </footer>
   );
