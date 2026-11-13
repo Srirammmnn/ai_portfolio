@@ -139,8 +139,8 @@ export default function HeroSection({ profile }: HeroProps) {
               {/* 3D Cartoon Avatar of Sriram */}
               <img
                 src="/cartoon-avatar.png"
-                alt="Sriram M 3D Cartoon Avatar"
-                className="w-full h-full object-cover object-center relative z-0 transition-transform duration-500 hover:scale-105"
+                alt="Sriram M Cartoon Avatar"
+                className="w-full h-full object-cover object-top relative z-0 transition-transform duration-500 hover:scale-105"
               />
             </div>
 
